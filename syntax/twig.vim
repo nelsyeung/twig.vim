@@ -5,15 +5,6 @@
 " URL:             https://github.com/nelsyeung/twig.vim
 " Acknowledgement: Based on evidens/vim-twig
 
-if exists('b:main_syntax')
-	finish
-endif
-if exists('b:current_syntax')
-	let b:main_syntax = b:current_syntax
-else
-	let b:main_syntax = 'twig'
-endif
-
 syntax case match
 
 " Twig template built-in tags and parameters (without filter, macro, is and raw, they have special treatment)
