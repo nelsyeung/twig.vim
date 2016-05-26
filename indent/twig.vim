@@ -3,11 +3,6 @@
 " Language: Twig
 " Acknowledgement: Based on lumiliet/vim-twig
 
-if exists("b:did_indent")
-	finish
-endif
-let b:did_indent = 1
-
 let s:baseIndentExpr=&indentexpr
 setlocal indentexpr=GetTwigIndent(v:lnum)
 
