@@ -29,8 +29,12 @@ To install twig.vim and other Vim plug-ins it is recommended to use one of the p
 2. Put files in your Vim directory (usually `~/.vim/` or `%PROGRAMFILES%/Vim/vimfiles` on Windows)
 
 ## Snippets
-This package does not include the old snipMate snippets in favour of [Neosnippet](https://github.com/Shougo/neosnippet.vim). Follow the instructions on their page to get snippets working. Although a pull request has been submitted to include the snippets from this package, it may not have the latest snippets from this repository. To have the latest snippets working, you can add to your .vimrc
+This package does not include the old snipMate snippets in favour of [Neosnippet](https://github.com/Shougo/neosnippet.vim). Follow the instructions on their page to get snippets working. Although a [neosnippet-snippets](https://github.com/Shougo/neosnippet-snippets/pull/113) have the snippets from this package, it might not be the latest version. To have the latest snippets working, you can add to your .vimrc
 
 ```vim
 let g:neosnippet#snippets_directory='~/.vim/bundle/twig.vim/neosnippets'
 ```
+
+## Todo
+- Better filetype detection. Detect html.twig, js.twig differently. This will need to change both ftdetect and indent files.
+- More useful snippets.
