@@ -1,0 +1,119 @@
+snippet autoescape "{% autoescape ... %} ... {% endautoescape %}"
+{% autoescape $1%}
+	$0
+{% endautoescape %}
+endsnippet
+
+snippet block "{% block ... %} ... {% endblock %}"
+{% block $1%}
+	$0
+{% endblock %}
+endsnippet
+
+snippet embed "{% embed '...' %} ... {% endembed %}"
+{% embed '${1:template}' %}
+	{% block $2 %}
+		$0
+	{% endblock %}
+{% endembed %}
+endsnippet
+
+snippet extends "{% extends '...' %}"
+{% extends '${1:template}' %}
+endsnippet
+
+snippet filter "{% filter ... %} ... {% endfilter %}"
+{% filter $1%}
+	$0
+{% endfilter %}
+endsnippet
+
+snippet flush "{% flush %}"
+{% flush %}
+endsnippet
+
+snippet for "{% for ... in ... %} ... {% endfor %}"
+{% for ${1:value} in ${2:list} %}
+	$0
+{% endfor %}
+endsnippet
+
+snippet from "{% from '...' import ... %}"
+{% from '${1:module}' import ${2:macro} %}
+endsnippet
+
+snippet if "{% if ... %} ... {% endif %}"
+{% if $1 %}
+	$0
+{% endif %}
+endsnippet
+
+snippet elseif "{% elseif ... %}"
+{% elseif $1 %}
+	$0
+endsnippet
+
+snippet else "{% else ... %}"
+{% else $1 %}
+	$0
+endsnippet
+
+snippet import "{% import '...' as ... %}"
+{% import '${1:module}' as ${2:namespace} %}
+endsnippet
+
+snippet include "{% include '...' %}"
+{% include '$1' %}
+endsnippet
+
+snippet macro "{% macro ...(...) %} ... {% endmacro %}"
+{% macro ${1:name}(${2:args}) %}
+	$0
+{% endmacro %}
+endsnippet
+
+snippet sandbox "{% sandbox %} ... {% endsandbox %}"
+{% sandbox %}
+	$0
+{% endsandbox %}
+endsnippet
+
+snippet set "{% set ... = ... %}"
+{% set ${1:var} = ${2:value} %}
+endsnippet
+
+snippet setblock "{% set ... %} ... {% endset %}"
+{% set ${1:var} %}
+	$0
+{% endset %}
+endsnippet
+
+snippet spaceless "{% spaceless %} ... {% endspaceless %}"
+{% spaceless %}
+	$0
+{% endspaceless %}
+endsnippet
+
+snippet use "{% use '...' %}"
+{% use '${1:template}' %}
+endsnippet
+
+snippet verbatim "{% verbatim %} ... {% endverbatim %}"
+{% verbatim %}
+	$0
+{% endverbatim %}
+endsnippet
+
+snippet comment "{# ... #}"
+{# $1 #}
+endsnippet
+
+snippet tag "{% ... %}"
+{% ${1:tag} %}
+endsnippet
+
+snippet tagblock "{% ... %} ... {% end... %}"
+{% ${1:tag} %}
+	$0
+{% end$1 %}
+endsnippet
